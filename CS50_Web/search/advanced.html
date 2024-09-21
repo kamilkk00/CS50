@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Google Advanced Search</title>
+        <style>
+            .top{
+                display: flex;
+                justify-content: right;
+                margin-inline: 0px;
+                text-align: right;
+            }
+            .sub{
+                font-size: 17px;
+                border-radius: 10px;
+                background-color: white;
+                border-color: white;
+                text-align: right;
+                border:none;   
+            }
+            .sub:hover{
+                font-weight:bold;
+            }
+            .top-left{
+                margin-right:10px;
+            }
+
+
+            p{
+                color:rgb(245, 81, 81);
+                margin-left: 40px;
+                margin-top:30px;
+                font-size: 25px;
+                
+            }
+            img{
+                width:100px;
+                margin-top: 20px;
+                margin-left: 20px;
+            }
+            body{
+                font-family: Roboto;
+            }
+            hr{
+                border-color:rgb(243, 242, 242);
+            }
+            .split{
+                display: flex;
+                align-items: center;
+                margin-top: 20px;
+            }
+            .text{
+                width: 580px;
+                box-sizing: border-box;
+                margin-right: 50px;
+                margin-left: 10px;
+            }
+            @media screen and (max-width: 1050px){
+                .hidden {
+                    display: none;
+                }
+            }
+            .section1{
+                font-size: 15px;
+                width:170px;
+                margin-left: 40px;
+            }
+            .hidden{
+                margin-left: 20px;
+                position: absolute;
+                left: 800px;
+                font-size:12px;
+            }
+            #submit{
+                margin-top: 30px;
+                font-weight: bold;
+                text-align: right;
+            }
+            #search2{
+                color:#fff;
+                background-color: #4d90fe;
+                border: 1px solid #3079ed;
+                box-shadow: none;
+                font-size:20px;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="top">
+            <form  action="index.html">
+                <input class="sub" id="top-left" type="submit" value="Google Search">
+            </form>
+            <form action="images.html">
+                <input class="sub" type="submit" value="Google Images">
+            </form>
+        </div>
+    
+        <a href="index.html">
+        <img src="https://www.google.pl/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google"></a>
+        <div></div>
+        <p>Advanced Search</p>
+        <hr>
+        <div class="split">
+            <div class="section1">Find pages with...</div>
+            <div class="text"></div>
+            <div class="hidden">To do this in the search box.</div>
+        </div>
+        <form action="https://www.google.com/search" method="get">
+                <div class="split">
+                <div class="section1">All these words:</div>
+                <input class="text" type="text" name="as_q">
+                <div class="hidden">Type the important words: tri-coulur rat terrier</div>
+            </div>
+            <div class="split">
+                <div class="section1">This exact word of phrase:</div>
+                <input class="text" type="text" name="as_epq">
+                <div class="hidden">Put exact words in quotes: "rat terrier"</div>
+            </div>
+            <div class="split">
+                <div class="section1">Any of these words:</div>
+                <input class="text" type="text" name="as_oq">
+                <div class="hidden">Type OR between all the words you want: miniture OR standard</div>
+            </div>
+            <div class="split">
+                <div class="section1">None of these words:</div>
+                <input class="text" type="text" name="as_eq">
+                <div class="hidden">Put a minus sign just before words that you don't want: -rodent, - "Jack Russell"</div>
+            </div>
+            <div id="submit" class="text">
+                    <input type="submit" id="search2" value="Google Advanced Search">
+            </div>
+        </form>
+    </body>
+</html>
