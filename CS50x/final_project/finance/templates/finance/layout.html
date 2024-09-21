@@ -1,0 +1,31 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>{% block title %}Finance{% endblock %}</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="{% static 'finance/styles.css' %}" rel="stylesheet">
+        <script src="{% static 'finance/front.js' %}"></script>
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    </head>
+    <body>
+        <div class="navbar">
+            <span><a href="{% url 'index' %}">Home</a></span>
+            <span><a href="{% url 'categories' %}">Categories</a></span>
+            {% if user.is_authenticated %}
+                <span><a href="{% url 'profile' user.username %}" id="user_name">{{ user.username }}</a></span>
+                <span><a href="{% url 'view_saved_posts' user.username %}">Saved</a></span>
+                <span><a href="{% url 'logout_view' %}" id="logout">Logout</a></span>
+                <span><a href="{% url 'create' %}">Create New Article</a></span>
+            {% else %}
+                <span><a href="{% url 'login_view' %}">Log in</a></span>
+                <span><a href="{% url 'register' %}">Register</a></span>
+            {% endif %}
+        </div>
+        <div class="container">
+            {% block body %}
+            {% endblock %}
+        </div>
+    </body>
+</html>
