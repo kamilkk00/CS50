@@ -1,0 +1,64 @@
+{% extends "bookit/layout.html" %}
+
+{% block body %}
+    <div class="service-container mt-5">
+        <h1>{{ service.name }}</h1>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <h3>Service Details</h3>
+                <p><strong>Description:</strong> {{ service.description }}</p>
+                <p><strong>Price:</strong> ${{ service.price }}</p>
+                <p><strong>Category:</strong> {{ service.get_category_display }}</p>
+                <p><strong>Duration:</strong> {{ service.duration }} minutes</p>
+            </div>
+
+            <div class="col-md-6">
+                <h3>Provided By</h3>
+                <p><strong>Company Name:</strong> <a href="{% url 'professional' service.created_by.user.username %}">{{ service.created_by.company_name }}</a></p>
+                <p><strong>Phone Number:</strong> {{ service.created_by.phone_number }}</p>
+                <p><strong>Address:</strong> {{ service.created_by.address }}</p>
+                <p><strong>City:</strong> {{ service.created_by.city }}</p>
+                <p><strong>Zip Code:</strong> {{ service.created_by.zip_code }}</p>
+                {% if request.user == service.created_by.user %}
+                <div class="mt-4">
+                    <a href="{% url 'appointments' service.id %}" class="btn btn-custom">
+                        View Booked Appointments
+                    </a>
+                </div>
+                {% endif %}
+
+            </div>
+        </div>
+        
+        <div class="row mt-5">
+            <div class="col-12">
+                <form method="get" class="mb-4">
+                    <div class="form-group">
+                        <label for="date">Select Date</label>
+                        <input type="date" id="date" name="date" class="form-control date-input" value="{{ selected_date|date:'Y-m-d' }}" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Check Availability</button>
+                </form>
+                {% if available_slots %}
+                    <h3>Available Slots on {{ selected_date|date:"D, M d, Y" }}</h3>
+                    <ul class="list-group">
+                        {% for slot in available_slots %}
+                            <li class="list-group-item">
+                                <p><strong>Start Time:</strong> {{ slot.start_time }}</p>
+                                <p><strong>End Time:</strong> {{ slot.end_time }}</p>
+                                <form action="{% url 'book_slot' service.id %}" method="post">
+                                    {% csrf_token %}
+                                    <input type="hidden" name="start_time" value="{{ slot.start_time }}">
+                                    <input type="hidden" name="date" value="{{ selected_date|date:'Y-m-d' }}">
+                                    <button type="submit" class="btn btn-primary">Book Now</button>
+                                </form>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                {% else %}
+                    <p>No available slots on this date.</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

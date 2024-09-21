@@ -1,0 +1,21 @@
+{% extends "bookit/layout.html" %}
+
+{% block body %}
+    <h1>Services in {{ selected_category_value }}</h1>
+    <div class="services-container">
+        {% if services %}
+            {% for service in services %}
+                <div class="service-box">
+                    <h2><a href="{% url 'service' service.id %}">{{ service.name }}</a></h2>
+                    <p>{{ service.description }}</p>
+                    <p><strong style="color: black;">Price:</strong> ${{ service.price }}</p>
+                    <p>Provided by: <a href="{% url 'professional' service.created_by.user.username %}">{{ service.created_by.company_name }}</a></p>
+
+                </div>
+            {% endfor %}
+        {% else %}
+            <h5>No Services Available in This Category.</h5>
+        {% endif %}
+    </div>
+    <a href="{% url 'index' %}">Back to Categories</a>
+{% endblock %}

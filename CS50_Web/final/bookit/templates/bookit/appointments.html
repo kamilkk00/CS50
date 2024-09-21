@@ -1,0 +1,35 @@
+{% extends "bookit/layout.html" %}
+
+{% block body %}
+<div class="appointments-container mt-5">
+    <h1>{{ service.name }} - Booked Appointments</h1>
+    
+    <div class="row mt-5">
+        <div class="col-12">
+            <form method="get" class="mb-4">
+                <div class="form-group">
+                    <label for="date">Select Date</label>
+                    <input type="date" id="date" name="date" class="form-control date-input" value="{{ selected_date|date:'Y-m-d' }}" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Check Booked Appointments</button>
+            </form>
+
+            {% if booked_slots %}
+                <h3>Booked Slots on {{ selected_date|date:"D, M d, Y" }}</h3>
+                <ul class="list-group">
+                    {% for slot in booked_slots %}
+                        <li class="list-group-item">
+                            <p><strong>Date:</strong> {{ slot.date|date:"d.m.Y" }}</p>
+                            <p><strong>Start Time:</strong> {{ slot.start_time|date:"H:i" }}</p>
+                            <p><strong>End Time:</strong> {{ slot.end_time|date:"H:i" }}</p>
+                            <p><strong>Booked By:</strong> {{ slot.booked_by.username }}</p>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <p>No Booked Slots for This Date.</p>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}

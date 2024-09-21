@@ -1,0 +1,52 @@
+{% extends "bookit/layout.html" %}
+
+{% block body %}
+    <div class="professional-container mt-5">
+        <h1>Professional profile of {{ professional.company_name }}</h1>
+        
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <h3>Company Information</h3>
+                <p><strong>Company Name:</strong> {{ professional.company_name }}</p>
+                <p><strong>Phone Number:</strong> {{ professional.phone_number }}</p>
+                <p><strong>Address:</strong> {{ professional.address }}</p>
+                <p><strong>City:</strong> {{ professional.city }}</p>
+                <p><strong>Zip Code:</strong> {{ professional.zip_code }}</p>
+            </div>
+
+            <div class="col-md-6 text-center">
+                {% if professional.company_logo %}
+                    <h3>Company Logo</h3>
+                    <img src="{{ professional.company_logo }}" alt="Company Logo" class="img-fluid" style="max-width: 200px; height: auto; margin-top: 0;">
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-12">
+                <h3>Services Offered</h3>
+                {% if services %}
+                    <ul class="list-group">
+                        {% for service in services %}
+                            <li class="list-group-item">
+                                <h5><a href="{% url 'service' service.id %}">{{ service.name }}</a></h5>
+                                <p>{{ service.description }}</p>
+                                <p><strong>Price:</strong> ${{ service.price }}</p>
+                                <p><strong>Category:</strong> {{ service.get_category_display }}</p>
+                                {% if request.user == service.created_by.user %}
+                                <div class="mt-4">
+                                    <a href="{% url 'appointments' service.id %}" class="btn btn-custom">
+                                        View Booked Appointments
+                                    </a>
+                                </div>
+                                {% endif %}
+                            </li>
+                        {% endfor %}                            
+                    </ul>
+                {% else %}
+                    <p>No services available at the moment.</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
