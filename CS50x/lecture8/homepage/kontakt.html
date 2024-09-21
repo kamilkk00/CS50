@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="ścieżka/do/bootstrap/css/bootstrap.min.css">
+    <link href="styles.css" rel="stylesheet">
+    <title>Formularz Kontaktowy</title>
+</head>
+<body>
+    <p class="odniesienia">
+        <a href="index.html" class="gora">Home</a>
+        <a href="uw.html" class="gora">Uniwersytet Warszawski</a>
+        <a href="sgh.html" class="gora">Szkoła Główna Handlowa</a>
+        <a href="dodatkowe.html" class="gora">Aktywności Dodatkowe</a>
+        <a href="programowanie.html" class="gora">Programowanie</a>
+        <a href="kontakt.html" class='gora'>Formularz Kontaktowy</a>
+    </p>
+    <div class="container mt-5">
+        <h1 class="mb-4">Formularz Kontaktowy</h1>
+        <form>
+            <div class="mb-3">
+                <label for="fullName" class="form-label">Imię i Nazwisko</label>
+                <input type="text" class="form-control" id="fullName" name="fullName" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Adres Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="message" class="form-label">Wiadomość</label>
+                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Wyślij</button>
+        </form>
+
+        <div class="alert alert-success mt-3" role="alert" style="display: none;">
+            Dziękujemy za wysłanie formularza! Skontaktujemy się z Tobą wkrótce.
+        </div>
+    </div>
+
+    <script src="ścieżka/do/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.querySelector('form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            document.querySelector('.alert-success').style.display = 'block';
+        });
+    </script>
+</body>
+</html>

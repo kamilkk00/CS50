@@ -1,0 +1,31 @@
+body{
+    text-align: center;
+    background-color: lightgrey;
+}
+h1{
+    font-size: 46px;
+    font-weight: bold;
+
+}
+img {
+    text-align: left;
+    border-radius: 30%;
+    max-width: 50%;
+    height: 500px;
+}
+.odniesienia{
+    text-align: left;
+    margin-left: 10px;
+    font-family: "Didot", sans-serif;
+
+}
+.gora{
+    margin-left: 10px;
+    color: black;
+    text-decoration: none;
+}
+.srodek{
+    display: inline-block;
+    text-align: left;
+}
+
