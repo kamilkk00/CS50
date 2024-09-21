@@ -1,0 +1,77 @@
+.container {
+    background-color: #f0f2f5;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card-title a:hover {
+    text-decoration: underline;
+}
+
+.card-text {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.form-control {
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.btn-outline-success, .btn-outline-danger, .btn-outline-secondary, .btn-outline-primary {
+    font-size: 1.2rem;
+    text-align: center;
+    flex: 1;
+}
+
+.btn-outline-success i, .btn-outline-danger i, .btn-outline-secondary i, .btn-outline-priamry i {
+    margin-right: 5px;
+}
+
+.pagination {
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.profile-header {
+    background-color: #f0f2f5;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.profile-header p {
+    font-size: 1.2rem;
+}
+
+.profile-header .fa-users,
+.profile-header .fa-user-friends {
+    margin-right: 5px;
+}
+.display-4 {
+    color: #333;
+    font-weight: bold;
+}
