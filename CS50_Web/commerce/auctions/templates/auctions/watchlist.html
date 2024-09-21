@@ -1,0 +1,31 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+
+    <h2 id="creating_list">Welcome!</h2>
+    {% if watchlist %}
+        <h2 id="creating_list">This Is Your Watchlist:</h2>
+
+        <div class="container mt-5">
+            <div class="d-flex flex-wrap justify-content-around">
+                {% for watchlist in watchlist %}
+                <a href="auction/{{ watchlist.auction.id }}">
+                <div class="card mb-4" style="width: 18rem;">
+                    <img src="{{ watchlist.auction.url| default:'https://t4.ftcdn.net/jpg/02/51/95/53/360_F_251955356_FAQH0U1y1TZw3ZcdPGybwUkH90a3VAhb.jpg' }}" class="card-img-top" alt="Photography" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                    <h5 class="card-title">{{ watchlist.auction.title }}</h5>
+                    <p class="card-text">{{ watchlist.auction.description }}</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Bid Price: ${{ watchlist.auction.starting_bid }}</li>
+                    </ul>
+                </div> 
+                {% endfor %}
+            </div>
+        </div>
+    {% else %}
+        <h2 id="creating_list">You Do Not Have Any Item In Watchlist</h2>
+    {% endif %}
+
+      
+{% endblock %}

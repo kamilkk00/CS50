@@ -1,0 +1,26 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+
+    <h2 id="creating_list">Create Listing:</h2>
+    <div id="create">
+    <form action="{% url 'create' %}" method="POST">
+        {% csrf_token %}
+        <input type="text" class="create" name="title" placeholder="Title">
+        <textarea type="text" id="description" class="create" name="description", style="height: 150px;", placeholder="Description" ></textarea>
+        <input type="number" class="create" name="starting_bid" placeholder="Starting Bid Price">
+        <select id="category" class="create" name="category" placeholder="Category">
+            <option value="">Select Category (Optional)</option>
+            <option value="Fashion">Fashion</option>
+            <option value="Toys">Toys</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Home">Home</option>
+            <option value="Sports">Sports</option>
+        </select>
+        <input type="text" class="create" name="url" placeholder="Link For Graphic" alt="Graphic not found">
+        <div></div>
+        <p></p>
+        <button type="submit" class="btn btn-primary">Create Listing</button>
+    </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,34 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+
+
+    {% if auction%}
+        <h2 id="creating_list">Active Listings For Category: {{category}} </h2>
+    {% endif %}
+
+    <div class="container mt-5">
+        <div class="d-flex flex-wrap justify-content-around">
+            {% if auction %}
+                {% for auction in auction %}
+                    <a href="auction/{{ auction.id }}">
+                    <div class="card mb-4" style="width: 18rem;">
+                        <img src="{{ auction.url| default:'https://t4.ftcdn.net/jpg/02/51/95/53/360_F_251955356_FAQH0U1y1TZw3ZcdPGybwUkH90a3VAhb.jpg' }}" class="card-img-top" alt="Photography" style="width: 100%; height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                        <h5 class="card-title">{{ auction.title }}</h5>
+                        <p class="card-text">{{ auction.description }}</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Bid Price: ${{ auction.starting_bid }}</li>
+                        </ul>
+                    </div> 
+                    </a>
+                    {% endfor %}
+            {% else %} 
+                <h2 id="creating_list">There Are No Item In This Category</h2>
+            {% endif %}
+        </div>
+    </div>
+  
+{% endblock %}
+

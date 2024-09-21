@@ -1,0 +1,101 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}  
+
+    <div class="container mt-5">
+        <div class="card">
+            
+            {% if message %}
+            <div class="card-header text-center">
+                <h1 class="card-title">{{ message }}</h1>
+            </div>
+            {% endif %}
+    
+            <!-- Short Description section with photo and watchlist adding-->
+
+            <div class="card-header text-center">
+                <h5 class="card-title">{{ auction.title }}</h5>
+            </div>
+            <div class="card-body">
+                <img  class="card-img-top mb-3" id = "small-img" style="max-height: 300px; object-fit: contain;"  src="{{ auction.url| default:'https://t4.ftcdn.net/jpg/02/51/95/53/360_F_251955356_FAQH0U1y1TZw3ZcdPGybwUkH90a3VAhb.jpg' }}" alt="Photography">
+                
+                {% if auction.avaliable == True %}
+
+                    {% if z >= auction.starting_bid %}
+                        <p class="card-text"><strong>Actual Price:</strong> ${{ z }} From: {{winner}}</p>
+                    {% else %}
+                        <p class="card-text"><strong>Starting Price:</strong> ${{ auction.starting_bid }} </p>
+                    {% endif %}
+                
+                {% endif %}
+
+                    <div class="form-group">Seller: {{ auction.user.username}}</div>
+                    <form action="{% url 'auction_detail' auction.id %}" method="POST">
+                        {% csrf_token %}
+                        <input type="hidden" name="action" value="watchlist">
+                        <button type="submit" class="btn btn-primary" name="watchlist">{{x}}</button>
+                    </form>
+                    <p></p>
+
+            <!-- Biding section -->
+                    {% if auction.avaliable == True %}
+                        {% if user.username == auction.user.username %}
+                            <form action="{% url 'auction_detail' auction.id %}" method="POST">
+                                {% csrf_token %}
+                                <input type="hidden" name="action" value="end_auction">
+                                <button type="submit" class="btn btn-primary">End Auction Now </button>
+                            </form>
+                        {% else %}
+                            <form action="{% url 'auction_detail' auction.id %}" method="POST">
+                                {% csrf_token %}
+                                <input type="hidden" name="action" value="n_bid">
+                                <div class="form-group">
+                                    <label for="bid">Bid Price: </label>
+                                    <input type="number" class="form-control" id="bid" placeholder="Your Price" name="n_bid">
+                                </div>
+                                <button type="submit" class="btn btn-primary" name="submit_bid">Submit</button>
+                            </form>
+                        {% endif %}
+                            
+                    {% elif user.username == winner %}
+                        <p>You won {{auction.title}} for: ${{z}} </p>
+                    {% else %}
+                        <p>Sold to: {{winner}} for: ${{z}}</p>
+                    {% endif %}
+
+
+            <!-- Product description and Category-->
+                <hr>
+                <p class="card-text"><strong>Category:</strong> {{ auction.category| default:"None" }}</p>
+                <hr>
+                <h6>Product Description:</h6>
+                <p class="card-text">{{ auction.description }}</p>
+
+            <!-- Comment section -->
+
+                <hr>
+                <h6>Comments:</h6>
+                    <div class="form-group">
+                    {% for comment in comments %}
+                        <p>User {{ comment.user.username }}: {{ comment.comment }}</p>
+                    {% endfor %}
+                </hr>
+                <hr>
+                </div>
+                <form action="{% url 'auction_detail' auction.id %}" method="POST">
+                    {% csrf_token %}
+                    <input type="hidden" name="action" value="comment">
+                    <div class="form-group">
+                        <label for="comment">Add Comment</label>
+                        <textarea class="form-control" id="comment" rows="3" placeholder="Add Your Comment" name="comment"></textarea>
+                    </div>
+                        <button type="submit" class="btn btn-primary">Add Comment</button>
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+

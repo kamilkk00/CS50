@@ -1,0 +1,45 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+
+    {% if message %}
+    <div class="card-header text-center">
+        <h1 class="card-title">{{ message }}</h1>
+    </div>
+    {% endif %}
+
+    {% if auction_bids %}
+        <h2 id="creating_list">Active Listings:</h2>
+        <div class="container mt-5">
+            <div class="d-flex flex-wrap justify-content-around">
+                {% for item in auction_bids %}
+                <a href="auction/{{ item.auction.id }}">
+                <div class="card mb-4" style="width: 18rem;">
+                    <img src="{{ item.auction.url| default:'https://t4.ftcdn.net/jpg/02/51/95/53/360_F_251955356_FAQH0U1y1TZw3ZcdPGybwUkH90a3VAhb.jpg' }}" class="card-img-top" alt="Photography" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                    <h5 class="card-title">{{ item.auction.title }}</h5>
+                    <p class="card-text">{{ item.auction.description }}</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            {% if item.bid %}
+                                Current Price: ${{ item.bid.bid }}
+                            {% else %}
+                                Starting Price: ${{ item.auction.starting_bid }}
+                            {% endif %}
+                        </li>
+                    </ul>
+                </div> 
+                </a>    
+                {% endfor %}
+            </div>
+        </div>
+
+    {% else %}
+        <h2 id="creating_list">There Is Currently No Item To Buy</h2>
+    {% endif %}
+
+
+      
+{% endblock %}
+
