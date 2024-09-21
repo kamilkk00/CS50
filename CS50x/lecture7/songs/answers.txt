@@ -1,0 +1,3 @@
+SQL jako program sam w sobie jest w miarę prosty i pozwala na szybkie wyszukiwanie potrzebnych danych.
+Niestety ale komendy trzeba wykuć na pamięć.
+Ponadto jest ciezko zmienić błąd w kodzie co jest irytujące.
