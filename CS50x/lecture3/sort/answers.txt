@@ -1,0 +1,11 @@
+sort1 uses: Bubble Sort
+
+How do you know?: It was the fastest program in sorted50000
+sort2 uses: Merge Sort
+
+How do you know?: It was the fastest program in radom50000
+
+sort3 uses: Selection Sort
+
+How do you know?: It was the last in every tape of sort
+

@@ -1,0 +1,15 @@
+
+random50000
+sort1 : real 5,862s
+sort2 : 0,865
+sort3: 3,152
+
+sorted5000:
+sort1: 0,33
+sort2: 0,39
+sort3: 0,049
+
+sorted 50000:
+sort1: 0,849 
+sort2: 1,200
+sort3: 2,757
