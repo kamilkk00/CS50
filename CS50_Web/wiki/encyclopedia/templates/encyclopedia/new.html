@@ -1,0 +1,20 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    New Page
+{% endblock %}
+
+{% block body %}
+    <h1>Create a New Page</h1>
+
+    <!-- Logic for creating new page with title and content -->
+
+    <form method="POST" action="{% url 'new' %}">
+        {% csrf_token %}
+        <textarea class="top-text" placeholder="Title" name="title"></textarea>
+        <div></div>
+        <textarea class="text" placeholder="Content For Wiki" name="content"></textarea>
+        <div></div>
+        <button id="button">Creat new file</button>
+    </form>
+{% endblock %}
