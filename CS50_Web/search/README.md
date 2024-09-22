@@ -1,5 +1,7 @@
 # Project 0: Search
 
+This project creates a front-end for Google Search, Image Search, and Advanced Search, mimicking Google's interface and functionality, including the "I'm Feeling Lucky" button.
+
 ## Video Demo
 [Watch the demo here](https://www.youtube.com/watch?v=FCYWvHuFgdI)
 
