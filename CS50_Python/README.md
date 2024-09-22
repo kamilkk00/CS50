@@ -15,9 +15,9 @@ This repository contains all the projects completed during the **CS50 Python** c
 8. **Object-Oriented Programming**  
 9. **Et Cetera**
 
-## Final Project: Debt Master
+## Final Project: [Debt Master](https://github.com/kamilkk00/CS50/tree/main/CS50_Python/project)
 
 ### Video Demo:  
-[Debt Master Video Demo](https://youtu.be/Gaczve8AV4w)
+[Debt Master](https://youtu.be/Gaczve8AV4w)
 
 **Debt Master** is a tool designed to calculate the optimal interest rate for loans or bonds issued by companies. It takes into account factors like country of operation, loan currency, central bank interest rates, investment grade, and debt term length to provide a precise interest rate. The project simulates real-world practices used by financial institutions and investment rating agencies.
