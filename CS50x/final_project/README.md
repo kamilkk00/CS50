@@ -1,6 +1,6 @@
-### Financial Forum Application
+# Financial Forum Application
 
-#### Video Demo:  
+## Video Demo:  
 [Finance Forum](https://youtu.be/Eq32tfheDWo)
 
 
@@ -16,7 +16,7 @@ Likes play an important role as they determine the ranking on the homepage.
 Users can also search for articles of interest based on categories or keywords, both by title and content.  
 Professional profiles also allow users to leave reviews, including satisfaction ratings (from 1 to 5).
 
-### Features
+## Features
 
 - **Registration and Login**: Users can register, log in, and log out.
 - **Post Creation**: Logged-in users can create new posts in selected categories.
@@ -27,7 +27,7 @@ Professional profiles also allow users to leave reviews, including satisfaction 
 - **Searching**: Users can search for posts by title or content.
 - **Adding Reviews**: Users can add reviews and ratings for professional profiles.
 
-### Project Structure
+## Project Structure
 
 - **views.py**: Contains the application's logic, including handling post creation, comments, user profiles, and other functions.
 - **models.py**: Defines data models such as User, Post, Comment, ProfessionalUser, Like, Save_Post, etc.
