@@ -16,10 +16,10 @@ This repository contains all the projects I completed during the CS50 Web course
 
 ## Final Project: BookIT – Platform for Booking Services
 
-### [Video Demo: Click here](https://youtu.be/57OIJV4FecQ)
+### Video Demo: 
+[BookIT](https://youtu.be/57OIJV4FecQ)
 
-### Description:
-BookIT is an interactive platform that allows users to book local services (such as haircuts, manicure) without needing a third-party intermediary. The platform generates time slots based on the service provider’s availability, allowing users to book directly from the website.
+**BookIT** is an interactive platform that allows users to book local services (such as haircuts, manicure) without needing a third-party intermediary. The platform generates time slots based on the service provider’s availability, allowing users to book directly from the website.
 
 ### Key Features:
 - **User Registration and Profiles**: Both regular users and service providers can create accounts. Service providers can upgrade to a professional profile to offer their services.
