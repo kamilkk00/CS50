@@ -1,8 +1,9 @@
 # Financial Forum Application
 
+The Financial Forum Application is an online platform built using the Django framework, aimed at fostering knowledge sharing between professionals like tax advisors, accountants, and business consultants, and individuals seeking business-related advice. The application serves as a bridge between knowledge seekers and experienced professionals, allowing users to engage with informative content, build professional connections, and access advisory services.
+
 ## Video Demo:  
 [Finance Forum](https://youtu.be/Eq32tfheDWo)
-
 
 This online forum was designed with the idea of sharing knowledge among experienced individuals or specialists in their respective fields (such as tax advisors, accountants, and others).
 
