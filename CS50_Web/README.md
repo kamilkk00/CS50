@@ -14,7 +14,25 @@ This repository contains all the projects I completed during the CS50 Web course
 7. **Testing, CI/CD:** Implementing automated testing and continuous integration/deployment pipelines to ensure the reliability and scalability of applications.
 8. **Scalability and Security:** Exploring best practices for optimizing performance and securing web applications.
 
-## Final Project: BookIT – Platform for Booking Services
+## Example projects:
+
+1. **[Project 0: Search](https://github.com/kamilkk00/CS50/tree/main/CS50_Web/search)** | [Video Demo](https://youtu.be/FCYWvHuFgdI)  
+   A simple search engine application, similar to Google.
+
+2. **[Project 1: Wiki](https://github.com/kamilkk00/CS50/tree/main/CS50_Web/wiki)** | [Video Demo](x)  
+   A Wikipedia-like application that allows users to create and edit web pages, fully built with Django.
+
+3. **[Project 2: Commerce](https://github.com/kamilkk00/CS50/tree/main/CS50_Web/commerce)** | [Video Demo](https://youtu.be/Yx3fN8dZxjM)  
+   A marketplace application where users can list items for sale, bid on items, add them to favorites, and comment on selected auctions.
+
+4. **[Project 3: Mail](https://github.com/kamilkk00/CS50/tree/main/CS50_Web/mail)** | [Video Demo](https://youtu.be/3rikJXhMqVY)  
+   A web-based email application that allows users to send, receive, and archive messages, with an interface similar to popular email platforms.
+
+5. **[Project 4: Network](https://github.com/kamilkk00/CS50/tree/main/CS50_Web/project4)** | [Video Demo](https://youtu.be/W_34RlwCXMc)  
+   A social media application where users can create posts, like posts, and follow other users.
+
+
+## Final Project: [BookIT](https://github.com/kamilkk00/CS50/tree/main/CS50_Web/final)
 
 ### Video Demo: 
 [BookIT](https://youtu.be/57OIJV4FecQ)
