@@ -1,11 +1,11 @@
-### Wiki - CS50W Project
+# Wiki - CS50W Project
 
 This project is a simple, Wikipedia-like online encyclopedia that allows users to browse, search, create, edit, and view encyclopedia entries. Each entry is written in Markdown and rendered as HTML when viewed.
 
-#### Video Demo:
+## Video Demo:
 [Wiki Demo](#)
 
-#### Key Features:
+## Key Features:
 1. **Entry Page**:  
    Users can visit `/wiki/TITLE`, where `TITLE` is the name of an encyclopedia entry, to view its content. If the entry does not exist, the user will see a "page not found" error.
 
@@ -27,13 +27,13 @@ This project is a simple, Wikipedia-like online encyclopedia that allows users t
 7. **Markdown to HTML Conversion**:  
    All Markdown content is automatically converted to HTML before being displayed to users, ensuring user-friendly formatting.
 
-#### Technologies Used:
+## Technologies Used:
 - **Python**: Backend logic using Django.
 - **Django**: Web framework for handling views, URLs, and templates.
 - **HTML & CSS**: For structuring and styling the pages.
 - **Markdown2**: Used to convert Markdown into HTML for rendering.
 
-#### Project Structure:
+## Project Structure:
 - **views.py**: Contains logic for rendering and managing encyclopedia entries.
 - **models.py**: Defines data models for entries.
 - **urls.py**: Manages the routing of different URLs (like index, entry, search, etc.).
