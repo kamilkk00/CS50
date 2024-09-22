@@ -1,4 +1,4 @@
-# Wiki - CS50W Project
+# Project 1: Wiki 
 
 This project is a simple, Wikipedia-like online encyclopedia that allows users to browse, search, create, edit, and view encyclopedia entries. Each entry is written in Markdown and rendered as HTML when viewed.
 
