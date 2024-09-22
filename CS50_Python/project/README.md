@@ -1,10 +1,10 @@
 
 # Debt Master
 
-#### Video Demo:  
-[https://youtu.be/Gaczve8AV4w](https://youtu.be/Gaczve8AV4w)
+## Video Demo:  
+[Debt Master](https://youtu.be/Gaczve8AV4w)
 
-#### Description:
+## Description:
 
 My final python project is designed to determine the optimal interest rate for loans or bonds issued by companies.
 
