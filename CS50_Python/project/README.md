@@ -1,5 +1,6 @@
-
 # Debt Master
+
+Debt Master is a sophisticated tool designed to help companies determine the optimal interest rate for loans or bonds based on various financial and market conditions. This project considers several key factors that influence the overall cost of borrowing, ensuring that companies are fully informed about the potential risks and interest rates associated with their debt.
 
 ## Video Demo:  
 [Debt Master](https://youtu.be/Gaczve8AV4w)
