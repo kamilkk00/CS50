@@ -22,7 +22,7 @@ Example projects:
 1. **Project 0: [Search](https://github.com/kamilkk00/CS50/tree/main/CS50_Web/search)** | [Video Demo](https://youtu.be/FCYWvHuFgdI)  
    A simple search engine application, similar to Google.
 
-2. **Project 1: [Wiki](https://github.com/kamilkk00/CS50/tree/main/CS50_Web/wiki)** | [Video Demo](x)  
+2. **Project 1: [Wiki](https://github.com/kamilkk00/CS50/tree/main/CS50_Web/wiki)** | [Video Demo](https://youtu.be/9XdMzFzk4rY)  
    A Wikipedia-like application that allows users to create and edit web pages, fully built with Django.
 
 3. **Project 2: [Commerce](https://github.com/kamilkk00/CS50/tree/main/CS50_Web/commerce)** | [Video Demo](https://youtu.be/Yx3fN8dZxjM)  
