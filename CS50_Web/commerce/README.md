@@ -1,4 +1,4 @@
-# Project 3: Commerce
+# Project 2: Commerce
 
 This project is an e-commerce auction platform that allows users to create listings, place bids, comment on listings, and manage watchlists. It is built using Django and provides a full-featured online auction system.
 
