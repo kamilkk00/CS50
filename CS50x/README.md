@@ -21,7 +21,7 @@ This repository contains all the projects I completed during the **CS50x** cours
 
 ## Final Project: Financial Forum Application
 
-#### Video Demo:  
+### Video Demo:  
 [Finance Forum](https://youtu.be/Eq32tfheDWo)
 
 The **Financial Forum Application** is a web platform built using Django, designed to facilitate knowledge sharing among professionals and individuals seeking business-related information.
