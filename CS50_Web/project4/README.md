@@ -1,4 +1,4 @@
-# Network - CS50W Project
+# Project 4: Network 
 
 This project is a social network website inspired by Twitter, where users can make posts, follow other users, and interact with posts by liking or editing them.
 
