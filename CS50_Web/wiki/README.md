@@ -35,7 +35,6 @@ This project is a simple, Wikipedia-like online encyclopedia that allows users t
 
 ## Project Structure:
 - **views.py**: Contains logic for rendering and managing encyclopedia entries.
-- **models.py**: Defines data models for entries.
 - **urls.py**: Manages the routing of different URLs (like index, entry, search, etc.).
 - **templates/encyclopedia/**: Contains all the HTML templates used by the app.
 - **static/encyclopedia/**: CSS and other static files.
