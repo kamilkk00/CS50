@@ -19,7 +19,7 @@ This repository contains all the projects I completed during the **CS50x** cours
 
 ---
 
-## Final Project: Financial Forum Application
+## Final Project: [Financial Forum](https://github.com/kamilkk00/CS50/tree/main/CS50x/final_project)
 
 ### Video Demo:  
 [Finance Forum](https://youtu.be/Eq32tfheDWo)
