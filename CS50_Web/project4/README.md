@@ -1,11 +1,11 @@
-### Network - CS50W Project
+# Network - CS50W Project
 
 This project is a social network website inspired by Twitter, where users can make posts, follow other users, and interact with posts by liking or editing them.
 
-#### Video Demo:
+## Video Demo:
 [Network Demo](https://www.youtube.com/watch?v=W_34RlwCXMc)
 
-#### Key Features:
+## Key Features:
 
 1. **New Post**:  
    Logged-in users can create a new text-based post. The post will be displayed in reverse chronological order, with the most recent posts appearing first.
@@ -29,21 +29,21 @@ This project is a social network website inspired by Twitter, where users can ma
 7. **Like and Unlike Posts**:  
    Users can like or unlike any post using JavaScript. The like count will be updated asynchronously without refreshing the page.
 
-#### Technologies Used:
+## Technologies Used:
 - **Python**: Backend logic using Django.
 - **JavaScript**: For asynchronous page updates (AJAX).
 - **Django**: Web framework for handling views, models, and URLs.
 - **HTML & CSS**: For structuring and styling the pages.
 - **Bootstrap**: For responsive design and pagination.
 
-#### Project Structure:
+## Project Structure:
 - **models.py**: Defines the data models, including User, Post, Like, and Follow.
 - **views.py**: Contains the logic for rendering the posts, handling likes, editing posts, and following/unfollowing users.
 - **urls.py**: Manages the URL routes for different pages like index, profile, and following.
 - **templates/network/**: HTML templates used by the application for displaying pages.
 - **static/network/**: Contains static files like CSS and JavaScript.
 
-#### Additional Functionality:
+## Additional Functionality:
 - **Asynchronous Updates**: Liking, unliking, and editing posts are performed asynchronously using fetch requests, providing a smooth user experience.
 - **User Authentication**: Users must be logged in to make posts, follow others, and like or edit posts.
 
