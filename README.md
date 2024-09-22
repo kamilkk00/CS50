@@ -2,7 +2,7 @@
 ## CS50x  
 ## CS50 Web  
 
-In this folder, I have included all my projects related to learning programming and developing skills as part of the CS50 courses. These projects cover a wide range of topics and technologies that helped me understand and master both the basics and more advanced programming concepts.
+In this folder, I have included all my projects related to learning programming and developing skills as part of the **CS50** courses. These projects cover a wide range of topics and technologies that helped me understand and master both the basics and more advanced programming concepts.
 
 I invite you to explore my programming journey and my projects!
 
@@ -49,7 +49,7 @@ Example projects:
 
 ### CS50x
 
-As part of the CS50x course, I completed projects that spanned a wide range of topics and technologies. This course covered not only low-level programming in C but also more advanced topics such as SQL, Flask, JavaScript, and CSS. Here are some of the key areas I explored:
+As part of the **CS50x** course, I completed projects that spanned a wide range of topics and technologies. This course covered not only low-level programming in C but also more advanced topics such as SQL, Flask, JavaScript, and CSS. Here are some of the key areas I explored:
 
 - **Algorithms and data structures,**
 - **Web development:** Using Flask as a lightweight web framework for creating web applications, along with HTML, CSS, and JavaScript for building dynamic, responsive front-end interfaces.
