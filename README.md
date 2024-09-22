@@ -62,7 +62,7 @@ Example projects:
 3. **Caesar:** A program that encrypts text using the Caesar cipher.
 4. **Recover:** A tool for recovering deleted images from binary files by identifying JPEG headers and reconstructing the images.
 5. **Finance:** A web application that simulates stock trading. Built with Flask for the backend, using SQLite for the database, and incorporating various financial functionalities, allowing users to buy and sell stocks, view their portfolio, and track historical stock prices
-6. **Final Project:** [Financial Forum](https://github.com/kamilkk00/CS50/tree/main/CS50x/final_project) | [Video Demo](https://youtu.be/Eq32tfheDWo)   
+6. **Final Project: [Financial Forum](https://github.com/kamilkk00/CS50/tree/main/CS50x/final_project)** | [Video Demo](https://youtu.be/Eq32tfheDWo)   
 
 ---
 
@@ -79,5 +79,5 @@ Example projects:
 1. **Tip Calculator:** An application to calculate the tip based on the bill amount and percentage.
 2. **Fuel Gauge:** A program that calculates the fuel level in the tank based on user input.
 3. **Bitcoin Price Index:** An application that fetches the current Bitcoin price from an API and displays the result to the user.
-4. **Final Project:** [Debt Master](https://github.com/kamilkk00/CS50/tree/main/CS50_Python/project) | [Video Demo](https://youtu.be/Gaczve8AV4w) 
+4. **Final Project: [Debt Master](https://github.com/kamilkk00/CS50/tree/main/CS50_Python/project)** | [Video Demo](https://youtu.be/Gaczve8AV4w) 
 
