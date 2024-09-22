@@ -34,7 +34,9 @@ Urls.py - The file contains the extracted URL
 
 Views.py
 
-* The file contains a number of functions that allow the application to work properly, i.e.: * Displaying categories on the home page,
+* The file contains a number of functions that allow the application to work properly, i.e.:
+
+* Displaying categories on the home page,
 
 * Displaying specific services in a given category,
 
