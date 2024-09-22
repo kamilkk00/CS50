@@ -1,5 +1,3 @@
-
-
 ## CS50 Python  
 ## CS50x  
 ## CS50 Web  
@@ -39,7 +37,6 @@ Example projects:
 6. **Final Project: BookIT**  
    An interactive platform for listing and booking services, allowing users to book local services (e.g., barber, manicure) directly through the platform, with automatically generated available time slots.
 
----
 
 ### Technologies used during the courses:
 
@@ -48,6 +45,7 @@ Example projects:
 - **Databases:** SQLite
 - **Other:** HTML, CSS
 
+---
 
 ### CS50x
 
