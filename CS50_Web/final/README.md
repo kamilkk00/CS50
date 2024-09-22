@@ -1,4 +1,7 @@
-### BookIT – Platform for booking services
+# BookIT – Platform for booking services
+
+## Video Demo:  
+[BookIT](https://www.youtube.com/watch?v=57OIJV4FecQ)
 
 ## Distincitveness:
 
