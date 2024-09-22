@@ -3,7 +3,7 @@
 This project is a simple, Wikipedia-like online encyclopedia that allows users to browse, search, create, edit, and view encyclopedia entries. Each entry is written in Markdown and rendered as HTML when viewed.
 
 ## Video Demo:
-[Wiki Demo](#)
+[Wiki Demo](https://youtu.be/9XdMzFzk4rY)
 
 ## Key Features:
 1. **Entry Page**:  
