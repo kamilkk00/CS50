@@ -19,22 +19,22 @@ As part of the **CS50 Web** course, I developed skills in building web applicati
 
 Example projects:
 
-1. **Project 0: Search**  
+1. **Project 0: [Search](https://github.com/kamilkk00/CS50/tree/main/CS50_Web/search)** | [Video Demo](https://youtu.be/FCYWvHuFgdI)  
    A simple search engine application, similar to Google.
-   
-2. **Project 1: Wiki**  
-   A Wikipedia application that allows users to create and edit web pages, fully built with Django.
 
-3. **Project 2: Commerce**  
+2. **Project 1: [Wiki](https://github.com/kamilkk00/CS50/tree/main/CS50_Web/wiki)** | [Video Demo](x)  
+   A Wikipedia-like application that allows users to create and edit web pages, fully built with Django.
+
+3. **Project 2: [Commerce](https://github.com/kamilkk00/CS50/tree/main/CS50_Web/commerce)** | [Video Demo](https://youtu.be/Yx3fN8dZxjM)  
    A marketplace application where users can list items for sale, bid on items, add them to favorites, and comment on selected auctions.
 
-4. **Project 3: Mail**  
+4. **Project 3: [Mail](https://github.com/kamilkk00/CS50/tree/main/CS50_Web/mail)** | [Video Demo](https://youtu.be/3rikJXhMqVY)  
    A web-based email application that allows users to send, receive, and archive messages, with an interface similar to popular email platforms.
 
-5. **Project 4: Network**  
+5. **Project 4: [Network](https://github.com/kamilkk00/CS50/tree/main/CS50_Web/project4)** | [Video Demo](https://youtu.be/W_34RlwCXMc)  
    A social media application where users can create posts, like posts, and follow other users.
 
-6. **Final Project: BookIT**  
+6. **Final Project: [BookIT](https://github.com/kamilkk00/CS50/tree/main/CS50_Web/final)** | [Video Demo](https://youtu.be/57OIJV4FecQ)   
    An interactive platform for listing and booking services, allowing users to book local services (e.g., barber, manicure) directly through the platform, with automatically generated available time slots.
 
 
@@ -61,8 +61,8 @@ Example projects:
 2. **Cash:** A program that calculates the minimum number of coins needed to give a specific amount of change, using a greedy algorithm.
 3. **Caesar:** A program that encrypts text using the Caesar cipher.
 4. **Recover:** A tool for recovering deleted images from binary files by identifying JPEG headers and reconstructing the images.
-
-5. **Finance:** A web application that simulates stock trading, using Flask for the backend, SQLite for the database, and 
+5. **Finance:** A web application that simulates stock trading. Built with Flask for the backend, using SQLite for the database, and incorporating various financial functionalities, allowing users to buy and sell stocks, view their portfolio, and track historical stock prices
+6. **Final Project:** [Financial Forum](https://github.com/kamilkk00/CS50/tree/main/CS50x/final_project) | [Video Demo](https://youtu.be/Eq32tfheDWo)   
 
 ---
 
@@ -77,7 +77,7 @@ The **CS50 Python** course allowed me to delve into advanced programming concept
 Example projects:
 
 1. **Tip Calculator:** An application to calculate the tip based on the bill amount and percentage.
-
 2. **Fuel Gauge:** A program that calculates the fuel level in the tank based on user input.
 3. **Bitcoin Price Index:** An application that fetches the current Bitcoin price from an API and displays the result to the user.
+4. **Final Project:** [Debt Master](https://github.com/kamilkk00/CS50/tree/main/CS50_Python/project) | [Video Demo](https://youtu.be/Gaczve8AV4w) 
 
