@@ -32,7 +32,7 @@ This repository contains all the projects I completed during the CS50 Web course
    A social media application where users can create posts, like posts, and follow other users.
 
 
-## Final Project: [BookIT](https://github.com/kamilkk00/CS50/tree/main/CS50_Web/final) | [Website](https://www.expertbizforum.com)
+## Final Project: [BookIT](https://github.com/kamilkk00/CS50/tree/main/CS50_Web/final) | [Website](https://www.easybookitonline.com)
 
 ### Video Demo: 
 [BookIT](https://youtu.be/57OIJV4FecQ)
