@@ -34,7 +34,7 @@ Example projects:
 5. **Project 4: [Network](https://github.com/kamilkk00/CS50/tree/main/CS50_Web/project4)** | [Video Demo](https://youtu.be/W_34RlwCXMc)  
    A social media application where users can create posts, like posts, and follow other users.
 
-6. **Final Project: [BookIT](https://github.com/kamilkk00/CS50/tree/main/CS50_Web/final)** | [Video Demo](https://youtu.be/57OIJV4FecQ)   
+6. **Final Project: [BookIT](https://github.com/kamilkk00/CS50/tree/main/CS50_Web/final)** | [Video Demo](https://youtu.be/57OIJV4FecQ) | [Website](https://www.easybookitonline.com)   
    An interactive platform for listing and booking services, allowing users to book local services (e.g., barber, manicure) directly through the platform, with automatically generated available time slots.
 
 
@@ -62,7 +62,7 @@ Example projects:
 3. **Caesar:** A program that encrypts text using the Caesar cipher.
 4. **Recover:** A tool for recovering deleted images from binary files by identifying JPEG headers and reconstructing the images.
 5. **Finance:** A web application that simulates stock trading. Built with Flask for the backend, using SQLite for the database, and incorporating various financial functionalities, allowing users to buy and sell stocks, view their portfolio, and track historical stock prices
-6. **Final Project: [Financial Forum](https://github.com/kamilkk00/CS50/tree/main/CS50x/final_project)** | [Video Demo](https://youtu.be/Eq32tfheDWo)   
+6. **Final Project: [Financial Forum](https://github.com/kamilkk00/CS50/tree/main/CS50x/final_project)** | [Video Demo](https://youtu.be/Eq32tfheDWo) | [Website](https://www.expertbizforum.com)   
 
 ---
 
@@ -79,5 +79,5 @@ Example projects:
 1. **Tip Calculator:** An application to calculate the tip based on the bill amount and percentage.
 2. **Fuel Gauge:** A program that calculates the fuel level in the tank based on user input.
 3. **Bitcoin Price Index:** An application that fetches the current Bitcoin price from an API and displays the result to the user.
-4. **Final Project: [Debt Master](https://github.com/kamilkk00/CS50/tree/main/CS50_Python/project)** | [Video Demo](https://youtu.be/Gaczve8AV4w) 
+4. **Final Project: [Debt Master](https://github.com/kamilkk00/CS50/tree/main/CS50_Python/project)** | [Video Demo](https://youtu.be/Gaczve8AV4w)
 
