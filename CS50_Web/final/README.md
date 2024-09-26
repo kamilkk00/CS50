@@ -1,4 +1,5 @@
 # BookIT – Platform for booking services
+## [Explore the Live Application](https://www.easybookitonline.com/)
 
 BookIT is a dynamic platform that simplifies the process of booking services by eliminating third-party intermediaries, allowing direct interaction between service providers and users. It enables professionals to offer their services while customers can easily book available time slots online.
 
