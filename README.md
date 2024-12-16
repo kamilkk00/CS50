@@ -1,6 +1,7 @@
 ## CS50 Python  
 ## CS50x  
 ## CS50 Web  
+## CS50 AI
 
 In this folder, I have included all my projects related to learning programming and developing skills as part of the **CS50** courses. These projects cover a wide range of topics and technologies that helped me understand and master both the basics and more advanced programming concepts.
 
@@ -44,6 +45,27 @@ Example projects:
 - **Frameworks:** Django, Bootstrap
 - **Databases:** SQLite
 - **Other:** HTML, CSS
+
+
+---
+
+### CS50AI
+
+The **CS50AI** course explores the foundational concepts and algorithms behind modern artificial intelligence. This course gave me hands-on experience in implementing intelligent systems using Python and libraries like scikit-learn and TensorFlow. I worked on topics that power technologies such as game-playing engines, handwriting recognition, and machine translation.
+
+Key topics covered include:
+
+- **Search:** Implemented graph search algorithms (e.g., BFS, DFS, A*) to solve problems like pathfinding and puzzle-solving.
+- **Knowledge Representation:** Built systems to represent and reason about knowledge using propositional logic and inference algorithms.
+- **Uncertainty:** Applied probability theory to model uncertainty, exploring Bayes' Rule, conditional probabilities, and Markov Models.
+- **Optimization:** Solved constraint satisfaction problems (CSPs) using optimization techniques like backtracking and local search.
+- **Learning:** Gained foundational knowledge in machine learning, training models for classification using supervised learning techniques like regression and decision trees.
+- **Neural Networks:** Implemented and trained neural networks for pattern recognition tasks such as handwriting digit recognition.
+- **Language:** Delved into natural language processing (NLP), working on projects like text generation and sentiment analysis using concepts like n-grams and sequence-to-sequence models.
+
+
+The **CS50AI** course enhanced my understanding of AI principles and gave me practical experience in building intelligent systems. Each project strengthened my ability to combine theory with application, preparing me to tackle real-world AI problems.
+
 
 ---
 
