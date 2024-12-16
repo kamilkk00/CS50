@@ -49,9 +49,9 @@ Example projects:
 
 ---
 
-### CS50AI
+### CS50 AI
 
-The **CS50AI** course explores the foundational concepts and algorithms behind modern artificial intelligence. This course gave me hands-on experience in implementing intelligent systems using Python and libraries like scikit-learn and TensorFlow. I worked on topics that power technologies such as game-playing engines, handwriting recognition, and machine translation.
+The **CS50 AI** course explores the foundational concepts and algorithms behind modern artificial intelligence. This course gave me hands-on experience in implementing intelligent systems using Python and libraries like scikit-learn and TensorFlow. I worked on topics that power technologies such as game-playing engines, handwriting recognition, and machine translation.
 
 Key topics covered include:
 
